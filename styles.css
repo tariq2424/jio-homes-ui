@@ -1,0 +1,148 @@
+
+.maincontainer {
+    
+    width: 1250px;
+    padding: 20px;
+    margin: auto;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.firstdiv{
+    width: 600px;
+}
+
+.firstsubdiv1 img {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover; 
+}
+
+.firstsubdiv-left img {
+    width: 290px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.firstsubdiv-right img {
+    width: 290px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.firstsubdiv2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.firstsubdiv-left,
+.firstsubdiv-right {
+    width: 290px;
+}
+
+
+.seconddiv {
+    width: 300px;
+    height: 665px;
+    
+}
+
+.secondsubdiv img {
+    height: 665px;
+    width : 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.thirddiv{
+     height: 665px;
+     width: 290px;
+}
+
+.thirdsubdiv1 img {
+    width: 290px;
+    height: 322px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.thirdsubdiv2 img {
+    width: 290px;
+    height: 322px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.maincontainer img{
+    display: block;
+}
+
+
+@media (max-width: 1250px) {
+    .maincontainer{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 900px) {
+    .maincontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* scale down widths */
+    .firstdiv, .seconddiv, .thirddiv{
+        width: 95%;
+    }
+
+    .firstsubdiv1 img,
+    .secondsubdiv img,
+    .thirdsubdiv1 img,
+    .thirdsubdiv2 img{
+        width: 100%;
+    }
+
+    /* first column 2 images stacked for mobile */
+    .firstsubdiv2{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .firstsubdiv-left img,
+    .firstsubdiv-right img{
+        width: 100%;
+        height: auto;
+    }
+
+    .firstsubdiv1 img,
+    .secondsubdiv img,
+    .thirdsubdiv1 img,
+    .thirdsubdiv2 img{
+        height: auto;
+    }
+}
+
+.thirdsubdiv2 img {
+    width: 290px;
+    height: 322px;
+    border-radius: 20px;
+    object-fit: cover;
+    
+}
+
+
+
+    
