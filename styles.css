@@ -143,6 +143,711 @@
     
 }
 
+/* =========================================================
+   JIO HOMES - COMPLETE RESPONSIVE DESIGN
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   DESKTOP - KEEP EXISTING DESIGN
+   ========================================================= */
+
+.maincontainer {
+    max-width: 1250px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.firstdiv {
+    width: 600px;
+    flex-shrink: 0;
+}
+
+.firstsubdiv1 img {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.firstsubdiv2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.firstsubdiv-left,
+.firstsubdiv-right {
+    width: 290px;
+}
+
+.firstsubdiv-left img,
+.firstsubdiv-right img {
+    width: 290px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.seconddiv {
+    width: 300px;
+    height: 665px;
+    flex-shrink: 0;
+}
+
+.secondsubdiv img {
+    width: 300px;
+    height: 665px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.thirdiv {
+    width: 290px;
+    height: 665px;
+    flex-shrink: 0;
+}
+
+.thirdsubdiv1 img,
+.thirdsubdiv2 img {
+    width: 290px;
+    height: 322px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.thirdsubdiv1 img {
+    margin-bottom: 15px;
+}
+
+.maincontainer img {
+    display: block;
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 1199px
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+    .maincontainer {
+        width: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .firstdiv {
+        width: calc(100% - 320px);
+    }
+
+    .firstsubdiv1 img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .firstsubdiv-left,
+    .firstsubdiv-right {
+        width: calc(50% - 8px);
+    }
+
+    .firstsubdiv-left img,
+    .firstsubdiv-right img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .seconddiv {
+        width: 300px;
+    }
+
+    .secondsubdiv img {
+        width: 100%;
+    }
+
+    .thirdiv {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        gap: 15px;
+    }
+
+    .thirdsubdiv1,
+    .thirdsubdiv2 {
+        width: 50%;
+    }
+
+    .thirdsubdiv1 img,
+    .thirdsubdiv2 img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .thirdsubdiv1 img {
+        margin-bottom: 0;
+    }
+
+
+    /* Product section */
+
+    .row.g-5 {
+        --bs-gutter-x: 20px;
+        --bs-gutter-y: 30px;
+    }
+
+    .row.g-5 > [class*="col-"] {
+        margin-right: 0 !important;
+    }
+
+    .row.g-5 img {
+        width: 100% !important;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .row.g-5 > [class*="col-"] > div {
+        padding: 20px !important;
+    }
+
+    .row.g-5 > [class*="col-"] [style*="width: 400px"] {
+        width: 100% !important;
+        max-width: 400px;
+    }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   768px - 991px
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    /* Main gallery becomes vertical */
+    .maincontainer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .firstdiv,
+    .seconddiv,
+    .thirdiv {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Main first image */
+    .firstsubdiv1 img {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* Keep two images side-by-side */
+    .firstsubdiv2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .firstsubdiv-left,
+    .firstsubdiv-right {
+        width: 50%;
+    }
+
+    .firstsubdiv-left img,
+    .firstsubdiv-right img {
+        width: 100%;
+        height: 320px;
+    }
+
+    /* Remote */
+    .seconddiv {
+        width: 100%;
+        height: auto;
+    }
+
+    .secondsubdiv img {
+        width: 100%;
+        height: 450px;
+    }
+
+    /* Third images */
+    .thirdiv {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .thirdsubdiv1,
+    .thirdsubdiv2 {
+        width: 50%;
+    }
+
+    .thirdsubdiv1 img,
+    .thirdsubdiv2 img {
+        width: 100%;
+        height: 320px;
+    }
+
+
+    /* Hero text */
+
+    .container > .text-center.p-4.m-5 {
+        margin: 25px 0 !important;
+        padding: 20px !important;
+    }
+
+    .container > .text-center.p-4.m-5 .display-2 {
+        font-size: 48px;
+        line-height: 1.15;
+    }
+
+    .container > .text-center.p-4.m-5 .h3 {
+        font-size: 22px;
+    }
+
+
+    /* Essentials sections */
+
+    .row > .col-12 > .container.d-flex {
+        width: 100% !important;
+        padding: 0 20px;
+    }
+
+
+    /* Footer */
+
+    footer > .row > .col {
+        margin-left: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   576px - 767px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    /* ---------------- NAVBAR ---------------- */
+
+    .navbar-brand {
+        margin-right: 0 !important;
+    }
+
+    .navbar-brand img {
+        width: 100px !important;
+        height: auto !important;
+    }
+
+    .navbar-collapse {
+        padding-top: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 0 !important;
+        padding: 8px 0;
+    }
+
+    /* Second navigation scrolls horizontally */
+    body > .navbar.nav {
+        justify-content: flex-start !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    body > .navbar.nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    body > .navbar.nav .nav-item {
+        flex: 0 0 auto;
+    }
+
+    body > .navbar.nav .nav-link {
+        margin-right: 12px !important;
+    }
+
+
+    /* ---------------- HERO ---------------- */
+
+    .container > .text-center.p-4.m-5 {
+        margin: 20px 0 !important;
+        padding: 15px 10px !important;
+    }
+
+    .container > .text-center.p-4.m-5 .h3 {
+        font-size: 19px !important;
+    }
+
+    .container > .text-center.p-4.m-5 .display-2 {
+        font-size: 38px !important;
+        line-height: 1.15;
+    }
+
+
+    /* ---------------- IMAGE GALLERY ---------------- */
+
+    .maincontainer {
+        width: 100%;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .firstdiv,
+    .seconddiv,
+    .thirdiv {
+        width: 100%;
+    }
+
+    .firstsubdiv1 img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .firstsubdiv2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .firstsubdiv-left,
+    .firstsubdiv-right {
+        width: 100%;
+    }
+
+    .firstsubdiv-left img,
+    .firstsubdiv-right img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+    .seconddiv {
+        height: auto;
+    }
+
+    .secondsubdiv img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 5;
+    }
+
+    .thirdiv {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .thirdsubdiv1,
+    .thirdsubdiv2 {
+        width: 100%;
+    }
+
+    .thirdsubdiv1 img,
+    .thirdsubdiv2 img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+
+    /* ---------------- SECTION HEADINGS ---------------- */
+
+    .container .display-4 {
+        font-size: 32px !important;
+        line-height: 1.2;
+    }
+
+    .container .display-5 {
+        font-size: 30px !important;
+        line-height: 1.2;
+    }
+
+
+    /* ---------------- PRODUCT CARDS ---------------- */
+
+    .row.g-5 {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .row.g-5 > [class*="col-"] {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .row.g-5 > [class*="col-"] > div {
+        padding: 15px !important;
+    }
+
+    .row.g-5 img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .row.g-5 [style*="width: 400px"] {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .card-title {
+        font-size: 22px !important;
+        line-height: 1.3;
+    }
+
+    .row.g-5 .fs-3 {
+        font-size: 20px !important;
+    }
+
+    .row.g-5 .btn {
+        font-size: 15px !important;
+        margin-right: 5px !important;
+        margin-bottom: 10px;
+    }
+
+
+    /* ---------------- JIOHOME ESSENTIALS ---------------- */
+
+    .row > .col-12 > .container.d-flex {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch;
+        justify-content: center !important;
+        padding: 0 15px;
+        margin-bottom: 60px !important;
+    }
+
+    .imagediv1,
+    .description {
+        width: 100% !important;
+    }
+
+    .imagediv1 {
+        margin-bottom: 25px;
+    }
+
+    .description h3 {
+        font-size: 22px;
+    }
+
+    .description h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .description p {
+        font-size: 16px !important;
+        line-height: 1.6;
+    }
+
+
+    /* ---------------- GUIDANCE ---------------- */
+
+    .w3-animate-bottom h1 {
+        font-size: 38px !important;
+    }
+
+    .w3-animate-bottom p {
+        font-size: 18px !important;
+    }
+
+    .w3-animate-bottom .btn {
+        padding: 10px 18px !important;
+        font-size: 15px !important;
+        margin: 5px !important;
+    }
+
+
+    /* ---------------- FOOTER ---------------- */
+
+    footer > .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer > .row > .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 15px !important;
+        margin-left: 0 !important;
+    }
+
+    footer p {
+        margin-left: 0 !important;
+        font-size: 16px !important;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+
+    footer li {
+        font-size: 14px;
+    }
+
+    footer .d-flex {
+        flex-wrap: wrap;
+        margin-left: 0 !important;
+    }
+
+    footer .d-flex img {
+        width: 130px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 575px
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    /* Hero */
+    .container > .text-center.p-4.m-5 .display-2 {
+        font-size: 32px !important;
+    }
+
+    .container > .text-center.p-4.m-5 .h3 {
+        font-size: 17px !important;
+    }
+
+
+    /* Gallery */
+    .maincontainer {
+        padding: 8px;
+    }
+
+    .firstsubdiv1 img {
+        border-radius: 15px;
+    }
+
+    .firstsubdiv-left img,
+    .firstsubdiv-right img,
+    .secondsubdiv img,
+    .thirdsubdiv1 img,
+    .thirdsubdiv2 img {
+        border-radius: 15px;
+    }
+
+
+    /* Section headings */
+    .container .display-4 {
+        font-size: 28px !important;
+    }
+
+    .container .display-5 {
+        font-size: 27px !important;
+    }
+
+
+    /* Product text */
+    .card-title {
+        font-size: 20px !important;
+    }
+
+    .row.g-5 .fs-3 {
+        font-size: 18px !important;
+    }
+
+
+    /* Guidance */
+    .w3-animate-bottom h1 {
+        font-size: 32px !important;
+    }
+
+
+    /* Footer one column */
+    footer > .row > .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    footer .d-flex img {
+        width: 140px !important;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL PHONES
+   <= 400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .container > .text-center.p-4.m-5 .display-2 {
+        font-size: 28px !important;
+    }
+
+    .container .display-4 {
+        font-size: 25px !important;
+    }
+
+    .container .display-5 {
+        font-size: 24px !important;
+    }
+
+    .description h1 {
+        font-size: 26px;
+    }
+
+    .description p {
+        font-size: 15px !important;
+    }
+
+    .w3-animate-bottom h1 {
+        font-size: 28px !important;
+    }
+
+    .w3-animate-bottom .btn {
+        display: inline-block;
+        width: auto;
+        font-size: 14px !important;
+    }
+}
 
 
     
